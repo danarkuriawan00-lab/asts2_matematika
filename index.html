@@ -1,0 +1,310 @@
+const questions = [
+  // --- PENGERTIAN & SUDUT SIKU-SIKU (1-8) ---
+  { 
+    id: 1, 
+    text: "Dua sinar garis yang bertemu pada satu titik pangkal yang sama akan membentuk ....", 
+    options: [{id:'A', text:'Garis lurus'}, {id:'B', text:'Sudut'}, {id:'C', text:'Bidang'}, {id:'D', text:'Titik sudut'}], 
+    correct: 'B' 
+  },
+  { 
+    id: 2, 
+    text: "Sebuah sudut yang besarnya tepat seperempat dari satu putaran penuh disebut sudut ....", 
+    options: [{id:'A', text:'Lancip'}, {id:'B', text:'Tumpul'}, {id:'C', text:'Siku-siku'}, {id:'D', text:'Lurus'}], 
+    correct: 'C' 
+  },
+  { 
+    id: 3, 
+    text: "Di antara benda berikut, yang memiliki sudut siku-siku pada setiap pojoknya adalah ....", 
+    options: [{id:'A', text:'Permukaan bola'}, {id:'B', text:'Ujung pensil'}, {id:'C', text:'Buku tulis'}, {id:'D', text:'Caping gunung'}], 
+    correct: 'C' 
+  },
+  { 
+    id: 4, 
+    text: "Jika dua buah sudut siku-siku digabungkan tanpa celah, maka akan membentuk sudut ....", 
+    options: [{id:'A', text:'Refleks'}, {id:'B', text:'Lurus'}, {id:'C', text:'Satu putaran'}, {id:'D', text:'Lancip'}], 
+    correct: 'B' 
+  },
+  { 
+    id: 5, 
+    text: "Jarum jam yang menunjukkan pukul 09.00 tepat membentuk sudut ....", 
+    options: [{id:'A', text:'30°'}, {id:'B', text:'45°'}, {id:'C', text:'90°'}, {id:'D', text:'120°'}], 
+    correct: 'C' 
+  },
+  { 
+    id: 6, 
+    text: "Manakah pernyataan yang benar tentang sudut siku-siku?", 
+    options: [{id:'A', text:'Lebih besar dari sudut tumpul'}, {id:'B', text:'Sama dengan 1/2 sudut lurus'}, {id:'C', text:'Lebih kecil dari sudut lancip'}, {id:'D', text:'Besarnya 180°'}], 
+    correct: 'B' 
+  },
+  { 
+    id: 7, 
+    text: "Huruf kapital yang memiliki tepat dua sudut siku-siku adalah ....", 
+    options: [{id:'A', text:'L'}, {id:'B', text:'T'}, {id:'C', text:'H'}, {id:'D', text:'E'}], 
+    correct: 'B' 
+  },
+  { 
+    id: 8, 
+    text: "Bangun datar yang memiliki empat sudut siku-siku adalah ....", 
+    options: [{id:'A', text:'Belah ketupat'}, {id:'B', text:'Layang-layang'}, {id:'C', text:'Persegi panjang'}, {id:'D', text:'Trapesium'}], 
+    correct: 'C' 
+  },
+
+  // --- MENGUKUR & MEMBANDINGKAN SUDUT (9-18) ---
+  { 
+    id: 9, 
+    text: "Alat baku yang digunakan untuk mengukur besar sudut secara akurat adalah ....", 
+    options: [{id:'A', text:'Jangka'}, {id:'B', text:'Penggaris busur'}, {id:'C', text:'Meteran'}, {id:'D', text:'Stopwatch'}], 
+    correct: 'B' 
+  },
+  { 
+    id: 10, 
+    text: "Sudut A besarnya 45° dan Sudut B besarnya 1/3 dari sudut lurus. Pernyataan yang benar adalah ....", 
+    options: [{id:'A', text:'A > B'}, {id:'B', text:'A < B'}, {id:'C', text:'A = B'}, {id:'D', text:'A dua kali B'}], 
+    correct: 'B' 
+  },
+  { 
+    id: 11, 
+    text: "Sebuah sudut besarnya 120°. Sudut ini termasuk jenis sudut ....", 
+    options: [{id:'A', text:'Lancip'}, {id:'B', text:'Siku-siku'}, {id:'C', text:'Tumpul'}, {id:'D', text:'Refleks'}], 
+    correct: 'C' 
+  },
+  { 
+    id: 12, 
+    text: "Jika sudut lancip dibandingkan dengan sudut tumpul, maka ....", 
+    options: [{id:'A', text:'Sudut lancip selalu lebih besar'}, {id:'B', text:'Keduanya sama besar'}, {id:'C', text:'Sudut tumpul selalu lebih besar'}, {id:'D', text:'Sudut lancip minimal 91°'}], 
+    correct: 'C' 
+  },
+  { 
+    id: 13, 
+    text: "Urutan sudut dari yang terkecil adalah ....", 
+    options: [{id:'A', text:'Siku-siku, Lancip, Tumpul'}, {id:'B', text:'Lancip, Siku-siku, Tumpul'}, {id:'C', text:'Tumpul, Siku-siku, Lancip'}, {id:'D', text:'Lancip, Tumpul, Siku-siku'}], 
+    correct: 'B' 
+  },
+  { 
+    id: 14, 
+    text: "Sudut yang besarnya antara 90° dan 180° disebut sudut ....", 
+    options: [{id:'A', text:'Lancip'}, {id:'B', text:'Siku-siku'}, {id:'C', text:'Tumpul'}, {id:'D', text:'Lurus'}], 
+    correct: 'C' 
+  },
+  { 
+    id: 15, 
+    text: "Hasil pengukuran sudut pada segitiga sama sisi adalah ....", 
+    options: [{id:'A', text:'Semua 90°'}, {id:'B', text:'Semua 45°'}, {id:'C', text:'Semua 60°'}, {id:'D', text:'Berbeda-beda'}], 
+    correct: 'C' 
+  },
+  { 
+    id: 16, 
+    text: "Jika sudut X = 75° dan sudut Y adalah sudut siku-siku, selisih keduanya adalah ....", 
+    options: [{id:'A', text:'15°'}, {id:'B', text:'25°'}, {id:'C', text:'105°'}, {id:'D', text:'165°'}], 
+    correct: 'A' 
+  },
+  { 
+    id: 17, 
+    text: "Besar sudut satu putaran penuh sama dengan .... kali sudut siku-siku.", 
+    options: [{id:'A', text:'2'}, {id:'B', text:'3'}, {id:'C', text:'4'}, {id:'D', text:'8'}], 
+    correct: 'C' 
+  },
+  { 
+    id: 18, 
+    text: "Sudut yang dibentuk oleh atap rumah yang landai biasanya merupakan sudut ....", 
+    options: [{id:'A', text:'Siku-siku'}, {id:'B', text:'Lancip'}, {id:'C', text:'Tumpul'}, {id:'D', text:'Lurus'}], 
+    correct: 'C' 
+  },
+
+  // --- MELUKIS SUDUT (19-25) ---
+  { 
+    id: 19, 
+    text: "Langkah pertama yang benar dalam melukis sudut menggunakan busur derajat adalah ....", 
+    options: [{id:'A', text:'Menentukan titik pusat busur'}, {id:'B', text:'Membuat garis lurus sebagai kaki sudut'}, {id:'C', text:'Menandai angka pada busur'}, {id:'D', text:'Menghubungkan dua garis'}], 
+    correct: 'B' 
+  },
+  { 
+    id: 20, 
+    text: "Saat melukis sudut 60°, titik pusat busur derajat harus diletakkan tepat di ....", 
+    options: [{id:'A', text:'Tengah garis'}, {id:'B', text:'Salah satu ujung garis (titik sudut)'}, {id:'C', text:'Atas garis'}, {id:'D', text:'Luar garis'}], 
+    correct: 'B' 
+  },
+  { 
+    id: 21, 
+    text: "Garis alas busur derajat (garis 0°) harus berhimpit dengan ....", 
+    options: [{id:'A', text:'Titik sudut'}, {id:'B', text:'Kaki sudut pertama'}, {id:'C', text:'Angka 90°'}, {id:'D', text:'Tepi buku'}], 
+    correct: 'B' 
+  },
+  { 
+    id: 22, 
+    text: "Jika kita ingin melukis sudut tumpul, maka tanda titik harus diletakkan pada angka ....", 
+    options: [{id:'A', text:'Kurang dari 90°'}, {id:'B', text:'Tepat 90°'}, {id:'C', text:'Lebih dari 90°'}, {id:'D', text:'Tepat 0°'}], 
+    correct: 'C' 
+  },
+  { 
+    id: 23, 
+    text: "Dalam melukis sudut, fungsi penggaris setelah menandai derajat pada busur adalah ....", 
+    options: [{id:'A', text:'Mengukur panjang garis'}, {id:'B', text:'Menghubungkan titik sudut dengan tanda derajat'}, {id:'C', text:'Menghapus garis'}, {id:'D', text:'Memutar busur'}], 
+    correct: 'B' 
+  },
+  { 
+    id: 24, 
+    text: "Untuk melukis sudut 150°, kita menggunakan skala busur yang dimulai dari angka ....", 
+    options: [{id:'A', text:'90'}, {id:'B', text:'0'}, {id:'C', text:'180'}, {id:'D', text:'45'}], 
+    correct: 'B' 
+  },
+  { 
+    id: 25, 
+    text: "Kesalahan umum saat melukis sudut adalah ....", 
+    options: [{id:'A', text:'Menggunakan pensil runcing'}, {id:'B', text:'Garis 0° busur tidak lurus dengan kaki sudut'}, {id:'C', text:'Menggunakan busur plastik'}, {id:'D', text:'Membuat garis yang panjang'}], 
+    correct: 'B' 
+  },
+
+  // --- CIRI-CIRI SEGITIGA (26-38) ---
+  { 
+    id: 26, 
+    text: "Segitiga yang ketiga sisinya sama panjang disebut segitiga ....", 
+    options: [{id:'A', text:'Siku-siku'}, {id:'B', text:'Sama kaki'}, {id:'C', text:'Sama sisi'}, {id:'D', text:'Sembarang'}], 
+    correct: 'C' 
+  },
+  { 
+    id: 27, 
+    text: "Pernyataan: (1) Memiliki 2 sisi sama panjang, (2) Memiliki 2 sudut sama besar. Ini ciri segitiga ....", 
+    options: [{id:'A', text:'Sama sisi'}, {id:'B', text:'Sama kaki'}, {id:'C', text:'Siku-siku'}, {id:'D', text:'Sembarang'}], 
+    correct: 'B' 
+  },
+  { 
+    id: 28, 
+    text: "Sebuah segitiga memiliki sudut 90°, 45°, dan 45°. Berdasarkan sudutnya, ini disebut segitiga ....", 
+    options: [{id:'A', text:'Lancip'}, {id:'B', text:'Tumpul'}, {id:'C', text:'Siku-siku'}, {id:'D', text:'Sama sisi'}], 
+    correct: 'C' 
+  },
+  { 
+    id: 29, 
+    text: "Total jumlah seluruh sudut dalam segitiga apa pun adalah ....", 
+    options: [{id:'A', text:'90°'}, {id:'B', text:'180°'}, {id:'C', text:'270°'}, {id:'D', text:'360°'}], 
+    correct: 'B' 
+  },
+  { 
+    id: 30, 
+    text: "Mungkinkah sebuah segitiga memiliki dua sudut siku-siku? Mengapa?", 
+    options: [{id:'A', text:'Mungkin, agar jadi persegi'}, {id:'B', text:'Tidak mungkin, karena jumlah sudut akan melebihi 180°'}, {id:'C', text:'Mungkin, pada segitiga sama kaki'}, {id:'D', text:'Tidak mungkin, karena segitiga hanya punya 3 sisi'}], 
+    correct: 'B' 
+  },
+  { 
+    id: 31, 
+    text: "Segitiga yang salah satu sudutnya lebih besar dari 90° disebut segitiga ....", 
+    options: [{id:'A', text:'Siku-siku'}, {id:'B', text:'Lancip'}, {id:'C', text:'Tumpul'}, {id:'D', text:'Sama kaki'}], 
+    correct: 'C' 
+  },
+  { 
+    id: 32, 
+    text: "Persamaan antara segitiga sama sisi dan segitiga sama kaki adalah ....", 
+    options: [{id:'A', text:'Semua sudutnya 60°'}, {id:'B', text:'Memiliki minimal dua sisi yang sama panjang'}, {id:'C', text:'Tidak memiliki simetri lipat'}, {id:'D', text:'Salah satu sudutnya pasti siku-siku'}], 
+    correct: 'B' 
+  },
+  { 
+    id: 33, 
+    text: "Segitiga sembarang adalah segitiga yang ....", 
+    options: [{id:'A', text:'Ketiga sisinya tidak ada yang sama panjang'}, {id:'B', text:'Ketiga sudutnya sama besar'}, {id:'C', text:'Memiliki satu sudut tumpul'}, {id:'D', text:'Memiliki dua sisi sejajar'}], 
+    correct: 'A' 
+  },
+  { 
+    id: 34, 
+    text: "Jika alas segitiga sama kaki adalah 10 cm dan kelilingnya 30 cm, panjang sisi kakinya adalah ....", 
+    options: [{id:'A', text:'10 cm'}, {id:'B', text:'15 cm'}, {id:'C', text:'20 cm'}, {id:'D', text:'25 cm'}], 
+    correct: 'A' 
+  },
+  { 
+    id: 35, 
+    text: "Ciri khas segitiga siku-siku sama kaki adalah memiliki dua sudut yang besarnya ....", 
+    options: [{id:'A', text:'30°'}, {id:'B', text:'45°'}, {id:'C', text:'60°'}, {id:'D', text:'90°'}], 
+    correct: 'B' 
+  },
+  { 
+    id: 36, 
+    text: "Segitiga lancip adalah segitiga yang ....", 
+    options: [{id:'A', text:'Salah satu sudutnya lancip'}, {id:'B', text:'Ketiga sudutnya lancip'}, {id:'C', text:'Dua sudutnya siku-siku'}, {id:'D', text:'Sisi-sisinya sama panjang'}], 
+    correct: 'B' 
+  },
+  { 
+    id: 37, 
+    text: "Pada segitiga sama sisi, jumlah simetri lipatnya ada ....", 
+    options: [{id:'A', text:'1'}, {id:'B', text:'2'}, {id:'C', text:'3'}, {id:'D', text:'0'}], 
+    correct: 'C' 
+  },
+  { 
+    id: 38, 
+    text: "Manakah yang merupakan kelompok panjang sisi yang dapat membentuk segitiga?", 
+    options: [{id:'A', text:'2cm, 2cm, 5cm'}, {id:'B', text:'3cm, 4cm, 5cm'}, {id:'C', text:'1cm, 2cm, 3cm'}, {id:'D', text:'5cm, 5cm, 12cm'}], 
+    correct: 'B' 
+  },
+
+  // --- CIRI-CIRI SEGIEMPAT (39-50) ---
+  { 
+    id: 39, 
+    text: "Segiempat yang memiliki dua pasang sisi sejajar dan empat sudut siku-siku adalah ....", 
+    options: [{id:'A', text:'Trapesium'}, {id:'B', text:'Jajargenjang'}, {id:'C', text:'Persegi panjang'}, {id:'D', text:'Layang-layang'}], 
+    correct: 'C' 
+  },
+  { 
+    id: 40, 
+    text: "Perbedaan utama antara persegi dan belah ketupat adalah ....", 
+    options: [{id:'A', text:'Panjang sisinya'}, {id:'B', text:'Besar sudut-sudutnya'}, {id:'C', text:'Jumlah sisinya'}, {id:'D', text:'Jumlah sudutnya'}], 
+    correct: 'B' 
+  },
+  { 
+    id: 41, 
+    text: "Segiempat yang hanya memiliki sepasang sisi sejajar disebut ....", 
+    options: [{id:'A', text:'Jajargenjang'}, {id:'B', text:'Trapesium'}, {id:'C', text:'Belah ketupat'}, {id:'D', text:'Persegi'}], 
+    correct: 'B' 
+  },
+  { 
+    id: 42, 
+    text: "Pernyataan yang salah tentang jajargenjang adalah ....", 
+    options: [{id:'A', text:'Sisi yang berhadapan sama panjang'}, {id:'B', text:'Sudut yang berhadapan sama besar'}, {id:'C', text:'Memiliki empat sudut siku-siku'}, {id:'D', text:'Memiliki dua pasang sisi sejajar'}], 
+    correct: 'C' 
+  },
+  { 
+    id: 43, 
+    text: "Segiempat yang diagonalnya saling tegak lurus tetapi panjang diagonalnya berbeda adalah ....", 
+    options: [{id:'A', text:'Persegi'}, {id:'B', text:'Persegi panjang'}, {id:'C', text:'Layang-layang'}, {id:'D', text:'Trapesium'}], 
+    correct: 'C' 
+  },
+  { 
+    id: 44, 
+    text: "Jumlah seluruh sudut pada bangun segiempat adalah ....", 
+    options: [{id:'A', text:'180°'}, {id:'B', text:'270°'}, {id:'C', text:'360°'}, {id:'D', text:'540°'}], 
+    correct: 'C' 
+  },
+  { 
+    id: 45, 
+    text: "Persegi merupakan bentuk khusus dari jajargenjang yang memiliki ....", 
+    options: [{id:'A', text:'Sisi tidak sama panjang'}, {id:'B', text:'Sudut siku-siku dan semua sisi sama panjang'}, {id:'C', text:'Hanya dua sudut siku-siku'}, {id:'D', text:'Satu pasang sisi sejajar'}], 
+    correct: 'B' 
+  },
+  { 
+    id: 46, 
+    text: "Bangun datar yang memiliki ciri 'sisi berhadapan sejajar, sudut berhadapan sama besar, tidak punya simetri lipat' adalah ....", 
+    options: [{id:'A', text:'Persegi panjang'}, {id:'B', text:'Belah ketupat'}, {id:'C', text:'Jajargenjang'}, {id:'D', text:'Trapesium sama kaki'}], 
+    correct: 'C' 
+  },
+  { 
+    id: 47, 
+    text: "Trapesium yang memiliki dua sudut siku-siku disebut trapesium ....", 
+    options: [{id:'A', text:'Sama kaki'}, {id:'B', text:'Siku-siku'}, {id:'C', text:'Sembarang'}, {id:'D', text:'Lancip'}], 
+    correct: 'B' 
+  },
+  { 
+    id: 48, 
+    text: "Diagonal persegi panjang memiliki sifat ....", 
+    options: [{id:'A', text:'Sama panjang dan saling membagi dua sama besar'}, {id:'B', text:'Saling tegak lurus'}, {id:'C', text:'Panjangnya berbeda'}, {id:'D', text:'Hanya satu yang membagi dua'}], 
+    correct: 'A' 
+  },
+  { 
+    id: 49, 
+    text: "Berapa banyak sepasang sisi sejajar pada bangun belah ketupat?", 
+    options: [{id:'A', text:'1 pasang'}, {id:'B', text:'2 pasang'}, {id:'C', text:'3 pasang'}, {id:'D', text:'Tidak ada'}], 
+    correct: 'B' 
+  },
+  { 
+    id: 50, 
+    text: "Di antara segiempat berikut, manakah yang selalu memiliki semua sisi sama panjang?", 
+    options: [{id:'A', text:'Persegi panjang dan Jajargenjang'}, {id:'B', text:'Persegi dan Belah ketupat'}, {id:'C', text:'Trapesium dan Layang-layang'}, {id:'D', text:'Persegi dan Persegi panjang'}], 
+    correct: 'B' 
+  }
